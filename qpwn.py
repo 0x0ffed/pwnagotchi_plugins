@@ -49,7 +49,7 @@ class Qpwn(plugins.Plugin):
         self.client_expiry = 3600 * 24
         self.ap_expiry = 3600 * 48
         self.lock = threading.Lock()
-        self.default_channels = [1, 6, 11]
+        self.default_channels = list(range(1, 15))
         self.min_attack_delay = 0.02
 
     def _load_memory(self):
