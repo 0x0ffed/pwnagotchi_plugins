@@ -44,11 +44,14 @@ It filters clients based on score. The score comes from signal strength, time si
 
 The Q-learning engine runs globally and also per AP. It uses blind count, number of APs, number of clients, and time bucket (hour) as state. The actions are preset recon profiles. Every recon choice is adjusted over time based on how many handshakes it leads to.
 
-## Why It’s Better
+## When to use Qpwn.
 
-Most plugins attack everything they see. This wastes time, heats up the Pi, and floods the air with junk. Qpwn filters targets, avoids dead clients, and focuses only on what gives results. It adapts instead of guessing.
+For targeted, repeat attacks in static locations (e.g., offices, campuses, apartments) where:
 
-Over time, it hits fewer targets but captures more handshakes.
+- You revisit the same area and want to optimize attacks over time.
+- You revisit the same area and want to optimize attacks over time. You need stealth (avoids excessive deauths, focuses on weak clients).
+- You revisit the same area and want to optimize attacks over time. You want automated learning (no manual tweaking—it improves itself).
+
 
 
 ```toml
